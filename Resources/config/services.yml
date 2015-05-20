@@ -10,7 +10,7 @@ services:
 
     # Commands
     bytefusion_deployment.command.cloudflare_cache:
-        class: Bytefusion\DeploymentBundle\Command\CloudflareCacheCommand
+        class: Bytefusion\DeploymentBundle\Command\CloudflareClearCacheCommand
         tags:
             - { name: console.command }
         arguments:
