@@ -1,0 +1,17 @@
+parameters:
+    cloudflare.url: https://www.cloudflare.com/api_json.html
+services:
+    bytefusion_deployment.service.cloudflare:
+            class: Bytefusion\DeploymentBundle\Service\CloudflareService
+            arguments:
+                - %cloudflare.url%
+                - %cloudflare.key%
+                - %cloudflare.email%
+
+    # Commands
+    bytefusion_deployment.command.cloudflare_cache:
+        class: Bytefusion\DeploymentBundle\Command\CloudflareCacheCommand
+        tags:
+            - { name: console.command }
+        arguments:
+            - @bytefusion_deployment.service.cloudflare

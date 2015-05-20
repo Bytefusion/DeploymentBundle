@@ -1,0 +1,16 @@
+{
+    "name": "bytefusion/deployment-bundle",
+    "description": "Deployment utilities for Symfony2",
+    "require": {
+
+        "symfony/console": "^2.6",
+        "symfony/framework-bundle": "^2.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Willem Slaghekke",
+            "email": "willem.slaghekke@live.nl"
+        }
+    ]
+}
