@@ -13,9 +13,9 @@
         "symfony/console": "^2.6",
         "symfony/framework-bundle": "^2.6"
     },
-    "target-dir": "Recognize/ExtraBundle",
+    "target-dir": "Bytefusion/DeploymentBundle",
 	"autoload": {
-		"psr-0": { "Recognize\\ExtraBundle": "" }
+		"psr-0": { "Bytefusion\\DeploymentBundle": "" }
 	},
 	"minimum-stability": "alpha"
 }
